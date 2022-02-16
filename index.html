@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Order summary card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+      body {
+        font-family: "Red Hat Display", serif;
+        color: hsl(224, 23%, 55%);
+        background-image: url("./images/pattern-background-desktop.svg");
+      }
+      .card {
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+        position: relative;
+        background-color: white;
+        left: 38%;
+        top: 50%;
+        border-radius: 20px;
+      }
+      p {
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      .main{
+        padding: 20px;
+      }
+      .hero {
+        width: 100%;
+        height: auto;
+        border-radius: 20px 20px 0 0;
+      }
+      .change {
+        display: grid;
+        padding: 15px;
+        margin: 0;
+      }
+      .change img{
+        grid-column-start: 1;
+      }
+      .annual {
+        padding-left: 10px;
+        grid-column-start: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+      .change button{
+        grid-column-start: 9;
+      }
+      .change button a:hover{
+        text-decoration: none;
+      }
+      h4 {
+        padding: 0;
+        margin: 0;
+        color: hsl(223, 47%, 23%);
+      }
+      h2{
+        color: hsl(223, 47%, 23%);
+        padding-top: 50px;
+        padding-bottom: 5px;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+      }
+      .button {
+        display: flex;
+        flex-direction: column;
+        margin-top: 35px;
+      }
+      button{
+        border: none;
+        cursor: pointer;
+      }
+      .button1{
+        color: white;
+        background-color: hsl(245, 75%, 52%);
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 1px 21px 34px -13px rgba(0,0,0,0.59);
+      }
+      .button1:hover{
+        background-color: hsl(224, 23%, 55%);
+      }
+      .button2{
+        color: hsl(224, 23%, 55%);
+        margin-top: 10px;
+        padding: 10px;
+        background-color: transparent;
+      }
+      .button2:hover{
+        color: hsl(223, 47%, 23%);
+      }
+      .attribution {
+        color: black;
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      @media screen and (max-width: 375px) {
+        body{
+          background-image: url("./images/pattern-background-mobile.svg");
+        }
+        .card{
+          width: 100%;
+          left: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <img class="hero" src="./images/illustration-hero.svg" alt="" srcset="" />
+      <div class="main">
+        <h2>Order Summary</h2>
+      <p>
+        You can now listen to millions of songs, audiobooks, and podcasts on any
+        device anywhere you like!
+      </p>
+      <div class="change">
+        <img src="./images/icon-music.svg" alt="" srcset="" />
+        <div class="annual">
+          <h4>Annual Plan</h4>
+
+          <div>$59.99/year</div>
+        </div>
+        <button style="background-color: transparent;">
+          <a href="#"> Change </a>
+        </button>
+      </div>
+      <div class="button">
+        <button class="button1">Proceed to Payment</button>
+        <button class="button2">Cancel Order</button>
+      </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Rizki Putra Julianto</a>.
+    </div>
+  </body>
+</html>
